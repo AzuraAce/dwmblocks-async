@@ -19,7 +19,7 @@
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
     X("", "/home/oliver/scripts/dwm/dwm-brightness get", 0, 2)   \
-    X("", "acpi | awk '{print $3 $4}' | sed 's/,/ /g'", 5, 9) \
+    X("", "acpi -b | awk -F', ' '{print $1, $2}' | sed 's/Battery [0-9]*: //'", 5, 9) \
     X("", "date '+%a, %d %b %Y %H:%M'", 1, 10)
 
 #endif  // CONFIG_H
