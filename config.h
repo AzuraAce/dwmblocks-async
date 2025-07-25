@@ -18,8 +18,8 @@
 
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
-    X("", "/home/oliver/scripts/dwm/dwm-volume get", 0, 1)   \
-    X("", "/home/oliver/scripts/dwm/dwm-brightness get", 0, 2)   \
+    /* X("", "/home/oliver/scripts/dwm/dwm-volume get", 0, 1) */   \
+    /* X("", "/home/oliver/scripts/dwm/dwm-brightness get", 0, 2) */  \
     /* X("", "/home/oliver/scripts/dwm/mullvad-vpn", 1, 4) */   \
     X("", "/home/oliver/scripts/dwm/dwm-wifi", 1, 3)   \
     X("", "/home/oliver/scripts/dwm/dwm-battery", 5, 9) \
